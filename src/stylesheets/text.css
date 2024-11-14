@@ -3,7 +3,6 @@ h1 {
         font-bold
         text-white
         text-8xl 
-        ml-[60px] 
         leading-[110px]
 }
 
@@ -12,6 +11,22 @@ h2 {
     font-bold 
     text-highlight 
     text-8xl 
-    ml-[60px]
     leading-[110px]
+}
+
+p.normal {
+    @apply font-custom 
+    font-bold 
+    text-white 
+    text-[40px]
+
+}
+
+p.highlight,
+span.highlight {
+    @apply font-custom 
+    font-bold 
+    text-highlight
+    text-[40px]
+
 }
