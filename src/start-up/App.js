@@ -1,28 +1,12 @@
-import ReactFullpage from "@fullpage/react-fullpage";
-
-import AboutMe from "../pages/AboutMe";
-import MainPage from "../pages/MainPage";
-import TechnicalSkills from "../pages/TechnicalSkills";
+import Introduction from "../pages/Introduction";
+import LandingPage from "../pages/LandingPage";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <ReactFullpage
-      scrollingSpeed={1000} 
-      anchors={["MainPage", "AboutMe"]}
-      navigation 
-      render={() => (
-        <ReactFullpage.Wrapper>
-          <div className="section">
-            <MainPage/>
-          </div>
-          <div className="section">
-            <AboutMe/>
-          </div>
-          <div className="section">
-            <TechnicalSkills/>
-          </div>
-        </ReactFullpage.Wrapper>
-      )}
-    />
+    <Routes>
+      <Route path="/" element={<LandingPage/>}/>
+      <Route path="/introduction" element={<Introduction/>}/>
+    </Routes>
   );
 }

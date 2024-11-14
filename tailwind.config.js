@@ -5,14 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'background': '#2B192E',
-        'highlight': '#CE8CA5',
-        'design-elements': '#50006C'
-      },
-
       fontFamily: {
-        custom: ['Albert-Sans', 'sans-serif']
+        custom: ['PressStart2P', 'sans-serif']
       }
     },
   },
