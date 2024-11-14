@@ -1,0 +1,13 @@
+div.background {
+    @apply bg-background flex h-screen snap-start overflow-hidden
+}
+
+div.design-circle {
+    @apply bg-design-elements 
+    rounded-full 
+    w-[1900px] 
+    h-[1900px]
+    opacity-25
+    z-0
+    ml-[-750px]
+}

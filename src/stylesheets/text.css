@@ -1,0 +1,17 @@
+h1 {
+    @apply font-custom 
+        font-bold
+        text-white
+        text-8xl 
+        ml-[60px] 
+        leading-[110px]
+}
+
+h2 {
+    @apply font-custom 
+    font-bold 
+    text-highlight 
+    text-8xl 
+    ml-[60px]
+    leading-[110px]
+}
