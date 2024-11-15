@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'customBackground': '#743F00'
+      },
       fontFamily: {
         custom: ['PressStart2P', 'sans-serif']
       }

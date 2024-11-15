@@ -13,7 +13,7 @@ export default function LandingPage() {
         return navigate("/introduction");
     }
     return (
-        <div>
+        <div className="relative h-screen overflow-hidden">
             <NormalBackground className="absolute"/>
             <img src={user}
                 alt="user avatar"

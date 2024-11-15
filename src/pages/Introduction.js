@@ -1,20 +1,21 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
-import NormalBackground from "../components/NormalBackground";
-import TabBar from "../components/TabBar";
-import haleema from "../resources/characters/haleema-frog.png";
-import user from "../resources/characters/user.png";
-import speechBubble from "../resources/speech-bubbles/speech-bubble.png";
+import NormalBackground from "../components/NormalBackground"
+import TabBar from "../components/TabBar"
+import haleema from "../resources/characters/haleema-frog.png"
+import user from "../resources/characters/user.png"
+import next from "../resources/misc/next.png"
+import speechBubble from "../resources/speech-bubbles/speech-bubble.png"
 
 
 
 export default function Introduction() {
     const navigate = useNavigate();
     const handleClick = () => {
-        return navigate("./Introduction.js");
+        return navigate("/goals");
     }
     return (
-        <div>
+        <div className="relative h-screen overflow-hidden">
             <NormalBackground className="absolute"/>
             <img src={user}
                 alt="user avatar"
@@ -34,6 +35,14 @@ export default function Introduction() {
                 full-stack developer
             </p>
             <TabBar className="absolute"/>
+            <img src={next}
+                alt="next button"
+                className="absolute top-[-275px] right-[-600px]"/>
+            <button onClick={handleClick}
+                className="absolute right-[75px] top-[115px] opacity-0">
+                Invisible button
+            </button>
+    
         </div>
     );
 }
