@@ -4,5 +4,11 @@
 
 @font-face {
   font-family: 'PressStart2P';
-  src: url('../resources/PressStart2P-Regular.ttf');
+  src: url('../resources/fonts/PressStart2P-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: 'FeelingPassionate';
+  src: url('../resources/fonts/Feeling\ Passionate.otf');
 }

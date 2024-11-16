@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'customBackground': '#743F00'
+        'customBackground': '#743F00',
+        'customFontColor': '#3949AB'
       },
       fontFamily: {
-        custom: ['PressStart2P', 'sans-serif']
+        custom: ['PressStart2P', 'sans-serif'],
+        custom2:['FeelingPassionate', 'sans-serif']
       }
     },
   },
