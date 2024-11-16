@@ -1,11 +1,8 @@
-import { useNavigate } from "react-router-dom"
-
 import user from "../../resources/characters/user.png"
 import haleema from "../../resources/characters/haleema-frog.png"
 import shop from "../../resources/misc/shop.png"
 import grass from "../../resources/normal-background/grass.png"
 import sky from "../../resources/normal-background/sky.png"
-import speechBubble from "../../resources/speech-bubbles/speech-bubble.png"
 
 export default function OutsideBookStore() {
     return(
