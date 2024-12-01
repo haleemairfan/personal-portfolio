@@ -11,6 +11,7 @@ import LandingPage from "../pages/LandingPage";
 import OutsideBookStore2 from "../pages/OutsideBookStore-2";
 import TechnicalSkills from "../pages/TechnicalSkills";
 
+
 export default function App() {
   return (
       <Routes>

@@ -41,13 +41,6 @@ export default function CampusConnect() {
                     Your browser does not support the video tag
                 </video>
             </div>
-            <img src={next}
-                alt="next button"
-                className="absolute top-[-275px] right-[-600px]"/>
-            <button onClick={handleClick}
-                className="absolute right-[75px] top-[115px] opacity-0">
-                Invisible button
-            </button>
 
             <div className="absolute inset-0 top-[150px] left-[450px]">
                 <p className="font-custom2 leading-[30px] text-center">
@@ -102,6 +95,15 @@ export default function CampusConnect() {
                     </a> <br/>
                 </p>
             </div>
+
+            <img src={next}
+                alt="next button"
+                className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw] object-cover"/>
+            <button onClick={handleClick}
+                className="absolute top-[10%] right-[2%] w-[10vw] h-[10vh] opacity-0">
+                Invisible button
+            </button>
+
             <TabBar color="white"/>
         </div>
     );

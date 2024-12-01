@@ -35,7 +35,7 @@ export default function BookStorePage2() {
             </p>
                         
             <button onClick={handleClick}
-                className="absolute top-[580px] left-[660px] h-[100px] w-[100px] opacity-0">
+                className="absolute top-[75%] left-[45%] h-[20vh] w-[20vw] opacity-0">
                 Invisible button
             </button>
             <TabBar color="white"/>

@@ -1,4 +1,4 @@
-import user from "../../resources/characters/user.png"
+import Character from "./Character"
 import haleema from "../../resources/characters/haleema-frog.png"
 import shop from "../../resources/misc/shop.png"
 import grass from "../../resources/normal-background/grass.png"
@@ -9,19 +9,17 @@ export default function OutsideBookStore() {
         <div className="relative h-screen">
             <img src={sky}
                 alt="sky"
-                className="absolute"/>
+                className="absolute w-[100vw] h-[100vh] object-cover"/>
             <img src={shop}
                 alt="bookshop"
-                className="absolute right-[-500px]"/>
+                className="absolute right-[-30%] w-[100vw] h-[100vh] object-cover"/>
             <img src={grass}
                 alt="grass"
-                className="absolute"/>
-            <img src={user}
-                alt="user avatar"
-                className="absolute left-[-450px] bottom-[-240px]"/>
+                className="absolute w-[100vw] h-[100vh] "/>
+            <Character initialPosition={{x : -800, y : 180}} />
             <img src={haleema}
                 alt="haleema avatar"
-                className="absolute left-[0px] bottom-[-260px]"/>
+                className="absolute right-[5%] bottom-[-30%] w-[100vw] h-[100vh] object-cover"/>
         </div>
     );
 

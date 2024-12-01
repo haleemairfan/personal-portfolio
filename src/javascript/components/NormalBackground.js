@@ -7,13 +7,13 @@ export default function NormalBackground() {
         <div className="relative">
             <img src={sky}
                 alt="sky"
-                className="absolute"/>
+                className="absolute w-[100vw] h-[100vh] object-cover"/>
             <img src={grass}
                 alt="grass"
-                className="absolute"/>
+                className="absolute w-[100vw] h-[100vh] "/>
             <img src={tree}
                 alt="tree"
-                className="absolute left-[-300px]"/>
+                className="absolute left-[-20%] w-[100vw] h-[100vh] object-cover"/>
 
         </div>
     );

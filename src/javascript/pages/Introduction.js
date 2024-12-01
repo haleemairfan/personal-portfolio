@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom"
 
+import Character from "../components/Character"
 import NormalBackground from "../components/NormalBackground"
 import TabBar from "../components/TabBar"
 import haleema from "../../resources/characters/haleema-frog.png"
-import user from "../../resources/characters/user.png"
 import next from "../../resources/misc/next.png"
 import speechBubble from "../../resources/speech-bubbles/speech-bubble.png"
 
@@ -14,19 +14,35 @@ export default function Introduction() {
     const handleClick = () => {
         return navigate("/goals");
     }
+
+    
     return (
-        <div className="relative h-screen overflow-hidden">
+        <div className="relative h-screen overflow-hidden ">
             <NormalBackground className="absolute"/>
-            <img src={user}
-                alt="user avatar"
-                className="absolute right-[-100px] bottom-[-240px]"/>
+            <Character initialPosition={{x : 50, y : 0}} />
             <img src={haleema}
                 alt="haleema avatar"
-                className="absolute right-[-450px] bottom-[-260px]"/>
+                className="absolute right-[-30%] bottom-[-30%] w-[100vw] h-[100vh] object-cover"/>
             <img src={speechBubble}
                 alt="speech bubble"
-                className="absolute scale-x-[-1] right-[-350px] bottom-[-100px]"/>
-            <p className="absolute font-custom text-center right-[210px] bottom-[300px]">
+                className="absolute scale-x-[-1] h-[100vh] w-[100vw] left-[24.5%] top-[11%]"/>
+        <p
+            className="
+                absolute 
+                font-custom 
+                text-center 
+                left-[64.5%] 
+                top-[46%] 
+                leading-snug 
+                text-[6px]  
+                sm:text-[7px]  
+                md:text-[10px] 
+                lg:text-[13px]  
+                xl:text-[15px] 
+                2xl:text-[18px]  
+            "
+        >
+
                 Hi! I am Haleema. <br/>
                 I am currently a Y2 <br/>
                 Computer Science <br/> 
@@ -36,9 +52,9 @@ export default function Introduction() {
             </p>
             <img src={next}
                 alt="next button"
-                className="absolute top-[-275px] right-[-600px]"/>
+                className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw] object-cover"/>
             <button onClick={handleClick}
-                className="absolute right-[75px] top-[115px] opacity-0">
+                className="absolute top-[10%] right-[2%] w-[10vw] h-[10vh] opacity-0">
                 Invisible button
             </button>
             <TabBar className="absolute"/>

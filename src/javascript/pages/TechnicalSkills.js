@@ -114,14 +114,13 @@ export default function TechnicalSkills() {
             />    
 
 
-            <img src={next}
+        <img src={next}
                 alt="next button"
-                className="absolute top-[-275px] right-[-600px]"/>
+                className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw]"/>
             <button onClick={handleClick}
-                className="absolute right-[75px] top-[115px] opacity-0">
+                className="absolute top-[10%] right-[2%] w-[10vw] h-[10vh] opacity-0">
                 Invisible button
             </button>
-
             <TabBar color="white"/>
         </div>
     );
