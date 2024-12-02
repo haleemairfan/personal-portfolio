@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom"
 
-import TabBar from "../components/TabBar"
-import OpenBookBackground from "../components/OpenBookBackground"
-import line from "../../resources/book-store-background/line.png"
-import next from "../../resources/misc/next.png"
-import DerekUi from "../../resources/projects/DerekUI.png"
+import TabBar from "../../components/TabBar"
+import OpenBookBackground from "../../components/Backgrounds/OpenBookBackground"
+import line from "../../../resources/book-store-background/line.png"
+import next from "../../../resources/misc/next.png"
+import DerekUi from "../../../resources/projects/DerekUI.png"
 
 export default function DerekReminderBot() {
     const navigate = useNavigate();

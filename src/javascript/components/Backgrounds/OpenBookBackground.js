@@ -1,5 +1,5 @@
-import BookStore from "../components/BookStore";
-import Book from "../../resources/book-store-background/open-book.png";
+import BookStore from "./BookStore";
+import Book from "../../../resources/book-store-background/open-book.png";
 
 export default function OpenBookBackground() {
     return (

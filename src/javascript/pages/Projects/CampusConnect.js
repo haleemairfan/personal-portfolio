@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom"
 
-import TabBar from "../components/TabBar"
-import OpenBookBackground from "../components/OpenBookBackground"
-import line from "../../resources/book-store-background/line.png"
-import next from "../../resources/misc/next.png"
-import campusConnectVideo from "../../resources/projects/CampusConnectDemo.mp4"
+import TabBar from "../../components/TabBar"
+import OpenBookBackground from "../../components/Backgrounds/OpenBookBackground"
+import line from "../../../resources/book-store-background/line.png"
+import next from "../../../resources/misc/next.png"
+import campusConnectVideo from "../../../resources/projects/CampusConnectDemo.mp4"
 
 export default function CampusConnect() {
     const navigate = useNavigate();

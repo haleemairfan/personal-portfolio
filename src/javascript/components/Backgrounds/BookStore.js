@@ -1,8 +1,8 @@
-import user from "../../resources/characters/user.png"
-import haleema from "../../resources/characters/haleema-frog.png"
-import bookshelf from "../../resources/book-store-background/bookshelf.png"
-import smallBookshelf from "../../resources/book-store-background/bookshelf-deco.png"
-import table from "../../resources/book-store-background/table.png"
+import user from "../../../resources/characters/user.png"
+import haleema from "../../../resources/characters/haleema-frog.png"
+import bookshelf from "../../../resources/book-store-background/bookshelf.png"
+import smallBookshelf from "../../../resources/book-store-background/bookshelf-deco.png"
+import table from "../../../resources/book-store-background/table.png"
 
 export default function BookStore() {
     return(

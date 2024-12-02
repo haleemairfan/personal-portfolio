@@ -1,6 +1,6 @@
-import grass from "../../resources/normal-background/grass.png"
-import sky from "../../resources/normal-background/sky.png"
-import tree from "../../resources/normal-background/tree.png"
+import grass from "../../../resources/normal-background/grass.png"
+import sky from "../../../resources/normal-background/sky.png"
+import tree from "../../../resources/normal-background/tree.png"
 
 export default function NormalBackground() {
     return(

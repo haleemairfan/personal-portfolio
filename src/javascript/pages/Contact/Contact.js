@@ -1,8 +1,8 @@
 
-import OutsideBookStore from "../components/OutsideBookStore"
-import TabBar from "../components/TabBar"
-import scroll from "../../resources/misc/contact.png"
-import line from "../../resources/book-store-background/line.png"
+import OutsideBookStore from "../../components/Backgrounds/OutsideBookStore"
+import TabBar from "../../components/TabBar"
+import scroll from "../../../resources/misc/contact.png"
+import line from "../../../resources/book-store-background/line.png"
 
 
 export default function Contact() {

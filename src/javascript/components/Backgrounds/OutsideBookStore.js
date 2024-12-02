@@ -1,8 +1,8 @@
-import Character from "./Character"
-import haleema from "../../resources/characters/haleema-frog.png"
-import shop from "../../resources/misc/shop.png"
-import grass from "../../resources/normal-background/grass.png"
-import sky from "../../resources/normal-background/sky.png"
+import Character from "../Character"
+import haleema from "../../../resources/characters/haleema-frog.png"
+import shop from "../../../resources/misc/shop.png"
+import grass from "../../../resources/normal-background/grass.png"
+import sky from "../../../resources/normal-background/sky.png"
 
 export default function OutsideBookStore() {
     return(

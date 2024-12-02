@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 
-import BookStorePage from "../pages/BookStorePage";
-import BookStorePage2 from "../pages/BookStorePage-2"
-import CampusConnect from "../pages/CampusConnect";
-import Contact from "../pages/Contact";
-import DerekReminderBot from "../pages/DerekReminderBot";
-import Goals from "../pages/Goals";
-import Introduction from "../pages/Introduction";
-import LandingPage from "../pages/LandingPage";
-import OutsideBookStore2 from "../pages/OutsideBookStore-2";
-import TechnicalSkills from "../pages/TechnicalSkills";
+import BookStorePage from "../pages/Technical Skills/BookStorePage";
+import BookStorePage2 from "../pages/Projects/BookStorePage-2"
+import CampusConnect from "../pages/Projects/CampusConnect";
+import Contact from "../pages/Contact/Contact";
+import DerekReminderBot from "../pages/Projects/DerekReminderBot";
+import Goals from "../pages/Introduction/Goals";
+import Introduction from "../pages/Introduction/Introduction";
+import LandingPage from "../pages/Introduction/LandingPage";
+import OutsideBookStore2 from "../pages/Contact/OutsideBookStore-2";
+import TechnicalSkills from "../pages/Technical Skills/TechnicalSkills";
 
 
 export default function App() {

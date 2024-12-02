@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom"
 
-import TabBar from "../components/TabBar"
-import OpenBookBackground from "../components/OpenBookBackground"
-import line from "../../resources/book-store-background/line.png"
-import cLanguage from "../../resources/logos/C.png"
-import git from "../../resources/logos/git.png"
-import html from "../../resources/logos/html.png"
-import java from "../../resources/logos/java.png"
-import monogoDB from "../../resources/logos/mongoDB.png"
-import nodeJS from "../../resources/logos/nodeJS.png"
-import postgreSQL from "../../resources/logos/postgreSQL.png"
-import python from "../../resources/logos/python.png"
-import react from "../../resources/logos/react.png"
-import tailwindCSS from "../../resources/logos/tailwindCSS.png"
-import next from "../../resources/misc/next.png"
+import TabBar from "../../components/TabBar"
+import OpenBookBackground from "../../components/Backgrounds/OpenBookBackground"
+import line from "../../../resources/book-store-background/line.png"
+import cLanguage from "../../../resources/logos/C.png"
+import git from "../../../resources/logos/git.png"
+import html from "../../../resources/logos/html.png"
+import java from "../../../resources/logos/java.png"
+import monogoDB from "../../../resources/logos/mongoDB.png"
+import nodeJS from "../../../resources/logos/nodeJS.png"
+import postgreSQL from "../../../resources/logos/postgreSQL.png"
+import python from "../../../resources/logos/python.png"
+import react from "../../../resources/logos/react.png"
+import tailwindCSS from "../../../resources/logos/tailwindCSS.png"
+import next from "../../../resources/misc/next.png"
 
 export default function TechnicalSkills() {
     const navigate = useNavigate();
@@ -114,7 +114,7 @@ export default function TechnicalSkills() {
             />    
 
 
-        <img src={next}
+            <img src={next}
                 alt="next button"
                 className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw]"/>
             <button onClick={handleClick}

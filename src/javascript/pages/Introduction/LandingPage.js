@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
-import Character from "../components/Character";
-import NormalBackground from "../components/NormalBackground";
-import TabBar from "../components/TabBar";
-import haleema from "../../resources/characters/haleema-frog.png"
-import prompt from "../../resources/speech-bubbles/prompt-bubble.png"
+import Character from "../../components/Character";
+import NormalBackground from "../../components/Backgrounds/NormalBackground";
+import TabBar from "../../components/TabBar";
+import haleema from "../../../resources/characters/haleema-frog.png"
+import prompt from "../../../resources/speech-bubbles/prompt-bubble.png"
 
 
 export default function LandingPage() {
@@ -13,12 +13,12 @@ export default function LandingPage() {
         return navigate("/introduction");
     }
     return (
-        <div className="relative overflow-hidden w-[100vw] h-[100vh]">
+        <div className="relative overflow-hidden w-screen h-screen">
             <NormalBackground/>
-            <Character initialPosition={{x : 55, y : 0}} />
+            <Character initialPosition={{x : 50, y : 0}} className="h-screen w-screen right-[-50%] top-[20%]" />
             <img src={haleema}
                 alt="haleema avatar"
-                className="absolute right-[-30%] bottom-[-30%] w-[100vw] h-[100vh] object-cover"/>
+                className="absolute bottom-[-28%] right-[-30%] w-[100vw] h-[100vh] object-cover"/>
 
             <img src={prompt}
                     alt="bubble prompt"

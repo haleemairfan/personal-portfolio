@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import user from "../../resources/characters/user.png";
 
-const Character = ({ initialPosition }) => {
+const Character = ({ initialPosition, className }) => {
   const charRef = useRef(null);
   const [position, setPosition] = useState(initialPosition);
   const velocity = useRef({ x: 0, y: 0 });
@@ -66,7 +66,7 @@ const Character = ({ initialPosition }) => {
   return (
     <div
       ref={charRef}
-      className="absolute top-[23%] w-[100vw] h-[100vh] bg-no-repeat bg-cover"
+      className={`absolute ${className} bg-cover`}
       style={{
         backgroundImage: `url(${user})`,
         bottom: `${position.y}px`,
