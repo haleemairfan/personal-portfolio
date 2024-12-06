@@ -18,7 +18,7 @@ export default function BookStorePage2() {
             <BookStore/>
             <img src={book}
                 alt="book"
-                className="absolute top-[32%] h-[100vh] w-[100vw] object-cover"
+                className="absolute top-[35%] h-[100vh] w-[100vw] object-cover"
             />
             <SpeechBubble text={[
                 "With the skills I",
@@ -31,7 +31,7 @@ export default function BookStorePage2() {
 
                         
             <button onClick={handleClick}
-                className="absolute top-[75%] left-[45%] h-[20vh] w-[20vw] opacity-0">
+                className="absolute top-[80%] left-[45%] h-[10vh] w-[10vw] opacity-0">
                 Invisible button
             </button>
             <TabBar color="white"/>

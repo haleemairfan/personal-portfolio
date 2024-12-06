@@ -11,10 +11,7 @@ export default function BookStore() {
                 alt="bookshelf"
                 className="absolute left-[-27.5%] top-[5%] h-[100vh] w-[100vw] object-cover overflow-hidden"
             />
-            <img src={user}
-                alt="user"
-                className="absolute top-[2%] left-[5%] w-[80vw] h-[80vw] object-cover"
-            />   
+
             <img src={smallBookshelf}
                 alt="small bookshelf"
                 className="absolute bottom-[15%] left-[5.5%] h-[100vh] w-[100vw] object-cover"
@@ -26,7 +23,12 @@ export default function BookStore() {
             <img src={table}
                 alt="table"
                 className="absolute left-[30%] top-[30%] h-[100vh] w-[100vw] object-cover"
-            />          
+            /> 
+            <img src={user}
+                alt="user"
+                className="absolute top-[2%] left-[5%] w-[80vw] h-[80vw] object-cover
+                    sm:landscape:top-[20px]"
+            />            
             
         </div>
     );

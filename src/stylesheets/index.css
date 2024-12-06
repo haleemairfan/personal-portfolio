@@ -12,3 +12,28 @@
   font-family: 'FeelingPassionate';
   src: url('../resources/fonts/Feeling\ Passionate.otf');
 }
+@layer utilities {
+  @media (orientation: portrait) {
+    #rotate-warning {
+      @apply flex; /* Show the warning */
+    }
+
+    body {
+      @apply overflow-hidden; /* Prevent scrolling */
+    }
+
+    #root {
+      @apply hidden; /* Hide app content */
+    }
+  }
+
+  @media (orientation: landscape) {
+    #rotate-warning {
+      @apply hidden; /* Hide the warning */
+    }
+
+    #root {
+      @apply block; /* Show app content */
+    }
+  }
+}

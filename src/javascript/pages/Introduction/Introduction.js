@@ -11,18 +11,28 @@ import next from "../../../resources/misc/next.png"
 
 export default function Introduction() {
     const navigate = useNavigate();
-    const handleClick = () => {
-        return navigate("/goals");
-    }
 
-    
+
+    const handleClick = () => {
+        navigate("/goals");
+    };
+
     return (
         <div className="relative h-screen w-screen overflow-hidden ">
             <NormalBackground className="absolute"/>
-            <Character initialPosition={{x : 50, y : 0}} className="h-screen w-screen right-[-50%] top-[20%]" />
             <img src={haleema}
                 alt="haleema avatar"
-                className="absolute bottom-[-28%] right-[-30%] w-[100vw] h-[100vh] object-cover"/>
+                className="absolute bottom-[-30%] right-[-30%] w-[100vw] h-[100vh] object-cover"/>
+            <Character
+                initialPosition={{x : 50, y : 0}}
+                className="h-screen 
+                w-screen 
+                right-[-50%] 
+                top-[20%] 
+                object-cover
+                sm:landscape:top-[25%]"
+            />
+
             <SpeechBubble 
                 text={["Hi! I am Haleema.",
                     "I am currently a Y2",
@@ -36,7 +46,7 @@ export default function Introduction() {
                 className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw] object-cover"/>
             <button onClick={handleClick}
                 className="absolute top-[10%] right-[2%] w-[10vw] h-[10vh] opacity-0">
-                Invisible button
+                    Invisible button
             </button>
             <TabBar className="absolute"/>
 

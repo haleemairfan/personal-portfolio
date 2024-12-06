@@ -10,7 +10,7 @@ export default function NormalBackground() {
                 className="absolute w-[100vw] h-[100vh] object-cover"/>
             <img src={grass}
                 alt="grass"
-                className="absolute w-[100vw] h-[100vh] "/>
+                className="absolute w-[100vw] h-[100vh] object-cover"/>
             <img src={tree}
                 alt="tree"
                 className="absolute left-[-20%] w-[100vw] h-[100vh] object-cover"/>

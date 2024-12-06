@@ -18,8 +18,7 @@ export default function BookStorePage() {
             <BookStore className="absolute"/>
             <img src={book}
                 alt="book"
-                className="absolute top-[40%] left-[1%] h-[100vh] w-[100vw] object-cover"
-            />
+                className="absolute top-[40%] left-[1%] h-[100vh] w-[100vw] object-cover"/>
             <SpeechBubble text={[
                 "Here’s the book",
                 "I learnt my",
