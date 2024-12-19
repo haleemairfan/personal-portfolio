@@ -24,7 +24,7 @@ export default function Contact() {
             </h1>
 
             <a
-                href="/haleema irfan CV.pdf"
+                href="/Haleema_Irfan_Resume.pdf"
                 download="Haleema_Irfan_Resume.pdf"
                 className="text-customFontColor inset-0 underline absolute font-custom2 w-[15vw] h-[10vh]
                 top-[35%] left-[44%] text-[1.2vw]

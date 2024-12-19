@@ -9,7 +9,7 @@ import haleema from "../../../resources/characters/haleema-frog.png";
 import prompt from "../../../resources/speech-bubbles/prompt-bubble.png";
 
 export default function LandingPage() {
-    const [showFullScreenPrompt, setShowFullScreenPrompt] = useState(true); // State to manage prompt visibility
+    const [showFullScreenPrompt, setShowFullScreenPrompt] = useState(true); 
 
     const navigate = useNavigate();
 

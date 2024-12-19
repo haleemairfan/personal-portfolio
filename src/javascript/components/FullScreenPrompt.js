@@ -2,15 +2,21 @@ import React from "react";
 
 export default function FullScreenPrompt({ onClose }) {
     const goFullScreen = () => {
-        const element = document.documentElement; 
+        const element = document.documentElement;
+
         if (element.requestFullscreen) {
             element.requestFullscreen();
         } else if (element.mozRequestFullScreen) {
-            element.mozRequestFullScreen(); 
+            element.mozRequestFullScreen();
         } else if (element.webkitRequestFullscreen) {
-            element.webkitRequestFullscreen(); 
+            element.webkitRequestFullscreen();
         } else if (element.msRequestFullscreen) {
-            element.msRequestFullscreen(); 
+            element.msRequestFullscreen();
+        } else if (window.screen.orientation && window.screen.orientation.lock) {
+            // Handle mobile-specific full-screen behavior
+            window.screen.orientation.lock("landscape").catch((err) => {
+                console.error("Error locking screen orientation:", err);
+            });
         }
     };
 
@@ -22,7 +28,7 @@ export default function FullScreenPrompt({ onClose }) {
             <button
                 onClick={() => {
                     goFullScreen();
-                    onClose(); 
+                    onClose();
                 }}
                 className="bg-white text-black px-6 py-3 rounded-lg text-xl font-bold hover:bg-gray-300 transition"
             >
