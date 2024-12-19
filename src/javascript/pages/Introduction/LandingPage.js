@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Character from "../../components/Character";
 import NormalBackground from "../../components/Backgrounds/NormalBackground";
+import Character from "../../components/Character";
+import FullScreenPrompt from "../../components/FullScreenPrompt";
 import TabBar from "../../components/TabBar";
 import haleema from "../../../resources/characters/haleema-frog.png";
 import prompt from "../../../resources/speech-bubbles/prompt-bubble.png";
 
 export default function LandingPage() {
+    const [showFullScreenPrompt, setShowFullScreenPrompt] = useState(true); // State to manage prompt visibility
+
     const navigate = useNavigate();
 
 
     const handleClick = () => {
         navigate("/introduction");
     };
-    
+
     const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768 && window.innerWidth < 1024); 
 
 
@@ -57,6 +60,11 @@ export default function LandingPage() {
             >
                 Invisible button
             </button>
+
+            {showFullScreenPrompt && (
+                <FullScreenPrompt onClose={() => setShowFullScreenPrompt(false)} />
+            )}
+
             <TabBar className="absolute" />
         </div>
     );
