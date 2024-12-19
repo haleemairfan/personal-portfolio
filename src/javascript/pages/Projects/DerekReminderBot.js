@@ -31,7 +31,7 @@ export default function DerekReminderBot() {
                     className="relative object-cover 
                         left-[26vw] top-[28vh] w-[20vw]
                         2xl:left-[24vw] 2xl:top-[30vh] 2xl:w-[25vw]
-                        xl:left-[23vw] xl:top-[28vh] xl:w-[23vw]
+                        xl:left-[25vw] xl:top-[28vh] xl:w-[20vw]
                         lg:left-[20.5vw] lg:top-[28vh] lg:w-[25vw]
                         md:left-[30vw] md:top-[28vh] md:w-[18vw]
                         sm:left-[26vw] sm:top-[28vh] sm:w-[20vw]"/>
@@ -39,7 +39,7 @@ export default function DerekReminderBot() {
             <p className="font-custom2 text-center justify-center absolute inset-0
                     text-[1.1vw] leading-[190%] w-[50vw] top-[57vh] left-[10vw]
                     2xl:leading-[190%] 2xl:text-[1vw] 2xl:top-[60vh] 2xl:right-[37vw]
-                    xl:text-[1vw] xl:leading-[190%] xl:w-auto xl:top-[58vh] xl:right-[32vw]
+                    xl:text-[1vw] xl:leading-[190%] xl:w-auto xl:top-[58vh] xl:right-[40vw]
                     lg:text-[1.4vw] lg:leading-[190%] lg:w-auto lg:top-[55vh] lg:right-[34vw]
                     md:text-[0.9vw] md:leading-[190%] md:w-auto md:top-[57vh] md:right-[23vw]
                     sm:text-[1.1vw] sm:leading-[190%] sm:w-[50vw] sm:top-[57vh] sm:left-[10vw]">
@@ -89,7 +89,7 @@ export default function DerekReminderBot() {
                 Links
             </p>
 
-            <p className="font-custom2 text-customFontColor underline absolute inset-0
+            <p className="font-custom2 text-customFontColor underline absolute inset-0 z-10
                     left-[60%] text-[1.1vw] top-[22%]
                     2xl:text-[1vw] 2xl:top-[22vh] 2xl:left-[60vw]
                     xl:left-[61%] xl:text-[1vw] xl:top-[20%]
@@ -173,7 +173,7 @@ export default function DerekReminderBot() {
 
             <img src={next}
                 alt="next button"
-                className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw] object-cover"/>
+                className="absolute left-[43%] bottom-[35%] h-[100vh] w-[100vw] object-cover z-0"/>
             <button onClick={handleClick}
                 className="absolute top-[10%] right-[2%] w-[10vw] h-[10vh] opacity-0">
                     Invisible button
