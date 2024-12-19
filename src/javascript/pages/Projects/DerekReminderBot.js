@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom"
 
 import TabBar from "../../components/TabBar"
 import OpenBookBackground from "../../components/Backgrounds/OpenBookBackground"
-import line from "../../../resources/book-store-background/line.png"
 import next from "../../../resources/misc/next.png"
 import DerekUi from "../../../resources/projects/DerekUI.png"
 
@@ -16,38 +15,34 @@ export default function DerekReminderBot() {
     return(
         <div className="relative overflow-hidden">
             <OpenBookBackground className="absolute"/>
-            <div className="absolute inset-0 top-[-275px] left-[-200px]">
-                <h1 className="font-custom2 text-black object-contain relative
-                    sm:text-[22px] sm:left-[400px] sm:top-[330px]
-                    lg:text-[35px] lg:left-[530px] lg:top-[360px]
-                    xl:text-[50px] xl:left-[670px] xl:top-[400px]
-                    md:left-[450px] md:top-[340px] md:text-[25px]"> 
-                        Derek
-                </h1>
-                <img src={line}
-                    alt="line"
-                    className="object-contain relative
-                        sm:bottom-[-190px] sm:left-[185px] sm:w-[500px]
-                        md:left-[10px] md:bottom-[-75px] md:w-auto
-                        lg:left-[-20px] lg:bottom-[-25px] lg:w-auto
-                        xl:left-[-60px] xl:bottom-[50px] xl:w-auto"/>
-            </div>
+            <h1 className="font-custom2 text-black object-contain absolute underline
+                    text-[3.3vw] left-[32vw] top-[15vh]
+                    2xl:text-[3vw] 2xl:left-[33vw]
+                    xl:text-[3.3vw] xl:left-[31vw] xl:top-[16%] 
+                    lg:text-[3.5vw] lg:left-[30vw] lg:top-[17vh] 
+                    md:text-[2.3vw] md:left-[37vw] md:top-[18vh] 
+                    sm:text-[3.3vw] sm:left-[32vw] sm:top-[18vh]"> 
+                    Derek
+            </h1>
 
             <div className="absolute inset-0">
                 <img src={DerekUi}
                     alt="Derek UI"
-                    className="relative 
-                        xl:left-[370px] xl:top-[225px] xl:w-[300px] 
-                        lg:top-[180px] lg:left-[250px] md:w-[250px]
-                        md:top-[120px] md:left-[200px]
-                        sm:w-[160px] sm:left-[150px] sm:top-[100px]
-                        object-cover"/>
+                    className="relative object-cover 
+                        left-[26vw] top-[28vh] w-[20vw]
+                        2xl:left-[24vw] 2xl:top-[30vh] 2xl:w-[25vw]
+                        xl:left-[23vw] xl:top-[28vh] xl:w-[23vw]
+                        lg:left-[20.5vw] lg:top-[28vh] lg:w-[25vw]
+                        md:left-[30vw] md:top-[28vh] md:w-[18vw]
+                        sm:left-[26vw] sm:top-[28vh] sm:w-[20vw]"/>
             </div>
             <p className="font-custom2 text-center justify-center absolute inset-0
-                xl:leading-[30px] xl:top-[450px] xl:right-[400px] xl:text-[16px]
-                lg:top-[350px] lg:right-[280px] lg:text-[12px] lg:leading-[20px]
-                md:top-[250px] md:right-[210px] md:text-[9px] md:leading-[15px]
-                sm:text-[7px] sm:leading-[13px] sm:top-[210px] sm:right-[180px]">
+                    text-[1.1vw] leading-[190%] w-[50vw] top-[57vh] left-[10vw]
+                    2xl:leading-[190%] 2xl:text-[1vw] 2xl:top-[60vh] 2xl:right-[37vw]
+                    xl:text-[1vw] xl:leading-[190%] xl:w-auto xl:top-[58vh] xl:right-[32vw]
+                    lg:text-[1.4vw] lg:leading-[190%] lg:w-auto lg:top-[55vh] lg:right-[34vw]
+                    md:text-[0.9vw] md:leading-[190%] md:w-auto md:top-[57vh] md:right-[23vw]
+                    sm:text-[1.1vw] sm:leading-[190%] sm:w-[50vw] sm:top-[57vh] sm:left-[10vw]">
                     A Java-based chatbot that helps manage to-dos 
                     <span className="font-sans">
                         ,
@@ -85,18 +80,22 @@ export default function DerekReminderBot() {
                 </p>
 
             <p className="font-custom2 font-black absolute inset-0 justify-center text-center
-                xl:text-[25px] xl:top-[125px] xl:left-[400px]
-                lg:text-[20px] lg:top-[72px] lg:left-[300px]
-                md:text-[15px] md:top-[55px]
-                sm:top-[50px] sm:left-[200px] sm:text-[13px]">
+                    text-[1.5vw] top-[15vh] left-[30vw]
+                    2xl:text-[1.7vw] 2xl:top-[15vh] 2xl:left-[30vw]
+                    xl:text-[1.5vw] xl:top-[14vh] xl:left-[30vw]
+                    lg:text-[2vw] lg:top-[14vh] lg:left-[35vw]
+                    md:text-[1.3vw] md:top-[15vh] md:left-[25vw]
+                    sm:text-[1.5vw] sm:top-[15vh] sm:left-[30vw]">
                 Links
             </p>
 
             <p className="font-custom2 text-customFontColor underline absolute inset-0
-                xl:left-[825px] xl:top-[170px] xl:text-[17px]
-                lg:left-[600px] lg:text-[13px] lg:top-[110px]
-                md:left-[440px] md:top-[85px]
-                sm:text-[10px] sm:top-[75px] sm:left-[370px]">
+                    left-[60%] text-[1.1vw] top-[22%]
+                    2xl:text-[1vw] 2xl:top-[22vh] 2xl:left-[60vw]
+                    xl:left-[61%] xl:text-[1vw] xl:top-[20%]
+                    lg:left-[61vw] lg:text-[1.4vw] lg:top-[20vh]
+                    md:left-[58%] md:text-[1vw] md:top-[22%]
+                    sm:left-[60%] sm:text-[1.1vw] sm:top-[22%]">
                 <a href="https://github.com/haleemairfan/ip/releases/tag/A-Release">
                     Links to Installation
                 </a> <br/>
@@ -104,30 +103,24 @@ export default function DerekReminderBot() {
                     Github repo
                 </a>
             </p>
-            <div className="absolute inset-0 
-                xl:top-[-170px] xl:left-[200px]">
-                <h1 className="font-custom2 text-black object-contain relative
-                    xl:top-[400px] xl:left-[570px] xl:text-[50px]
-                    lg:text-[35px] lg:top-[160px] lg:left-[560px]
-                    md:text-[25px] md:left-[420px]
-                    sm:top-[120px] sm:left-[360px]"> 
-                    Reminder Bot 
-                </h1>
-                <img src={line}
-                    alt="line"
-                    className="object-contain relative 
-                        xl:top-[60px] xl:left-[100px]
-                        lg:bottom-[125px] lg:left-[170px]
-                        md:bottom-[95px] md:left-[120px]
-                        sm:bottom-[56px] sm:left-[100px]"
-                />
-            </div>
+
+        <h1 className="font-custom2 text-black object-contain absolute underline
+                text-[3.3vw] left-[55vw] top-[32vh]
+                2xl:text-[3vw] 2xl:top-[30vh] 2xl:left-[55vw]
+                xl:text-[3.3vw] xl:left-[55vw] xl:top-[26%] 
+                lg:text-[3.5vw] lg:left-[56vw] lg:top-[27vh] 
+                md:text-[2.3vw] md:left-[55vw] md:top-[32vh] 
+                sm:text-[3.3vw] sm:left-[55vw] sm:top-[32vh]"> 
+                Reminder Bot 
+            </h1>
 
             <p className="font-custom2 justify-center text-center inset-0 absolute
-                xl:leading-[30px] xl:top-[325px] xl:left-[420px] xl:text-[16px]
-                lg:text-[12px] lg:leading-[20px] lg:top-[220px] lg:left-[320px]
-                md:text-[9px] md:leading-[15px] md:left-[240px] md:top-[170px]
-                sm:text-[7px] sm:top-[150px] sm:left-[200px] sm:leading-[13px]">
+                    text-[1.1vw] leading-[190%] w-auto top-[42vh] left-[31vw]
+                    2xl:leading-[190%] 2xl:text-[1vw] 2xl:top-[40vh] 2xl:left-[30vw]
+                    xl:text-[1vw] xl:leading-[190%] xl:w-auto xl:top-[37vh] xl:left-[32vw]
+                    lg:text-[1.4vw] lg:leading-[190%] lg:w-auto
+                    md:text-[0.9vw] md:leading-[190%] md:w-auto md:top-[40vh] md:left-[25vw]
+                    sm:text-[1.1vw] sm:leading-[190%] sm:w-auto sm:top-[42vh] sm:left-[31vw]">
                 A Telegram bot designed to help users keep track <br/>
                 of reminders throughout the week
                 <span className="font-sans">
@@ -153,19 +146,23 @@ export default function DerekReminderBot() {
             </p>
 
             <p className="font-custom2 font-black absolute inset-0 justify-center text-center
-                xl:text-[25px] xl:top-[550px] xl:left-[400px]
-                lg:text-[20px] lg:top-[365px] lg:left-[320px]
-                md:top-[290px] md:left-[240px]
-                sm:top-[245px] sm:left-[190px] sm:text-[13px]">
+                    text-[1.5vw] top-[70vh] left-[30vw]
+                    2xl:text-[1.7vw] 2xl:top-[65vh] 2xl:left-[30vw]
+                    xl:text-[1.5vw] xl:top-[65vh] xl:left-[30vw]
+                    lg:text-[2vw] lg:top-[68vh] lg:left-[35vw]
+                    md:text-[1.3vw] md:top-[70vh] md:left-[25vw]
+                    sm:text-[1.5vw] sm:top-[70vh] sm:left-[30vw]">
                 Links
             </p>
 
 
             <p className="font-custom2 text-customFontColor underline absolute inset-0
-                xl:left-[825px] xl:top-[600px] xl:text-[17px]
-                lg:text-[13px] lg:top-[400px] lg:left-[600px]
-                md:top-[320px] md:left-[450px]
-                sm:text-[10px] sm:top-[265px] sm:left-[360px]">
+                    text-[1.1vw] left-[59%] top-[75%]
+                    2xl:text-[1vw] 2xl:top-[72vh] 2xl:left-[60vw]
+                    xl:left-[60%] xl:text-[1vw] xl:top-[71vh]
+                    lg:left-[61vw] lg:text-[1.4vw] lg:top-[75vh]
+                    md:left-[58%] md:text-[1vw] md:top-[75%]
+                    sm:text-[1.1vw] sm:left-[59%] sm:top-[75%]">
                 <a href="https://t.me/remindersUsingABot">
                     Links to Telegram Bot
                 </a> <br/>

@@ -13,10 +13,17 @@ export default function OutsideBookStore() {
             <img src={shop}
                 alt="bookshop"
                 className="absolute right-[-30%] w-[100vw] h-[100vh] object-cover"/>
-            <img src={grass}
+            <img
+                src={grass}
                 alt="grass"
-                className="absolute w-[100vw] h-[100vh] object-cover"/>
-            <Character initialPosition={{x : -800, y : 180}} />
+                className="absolute inset-0 object-cover
+                w-full h-full
+                2xl:w-full 2xl:h-full 2xl:top-0
+                xl:w-[100%] xl:h-[100%] xl:top-0
+                lg:w-[100%] lg:h-[100%] lg:top-0
+                md:w-[100%] md:h-[130%] md:top-[-30%]
+                sm:w-[100%] sm:h-[100%]"
+            />
             <img src={haleema}
                 alt="haleema avatar"
                 className="absolute right-[5%] bottom-[-30%] w-[100vw] h-[100vh] object-cover"/>

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 import TabBar from "../../components/TabBar"
 import LogoRow from "../../components/LogoRow"
 import OpenBookBackground from "../../components/Backgrounds/OpenBookBackground"
-import line from "../../../resources/book-store-background/line.png"
 import cLanguage from "../../../resources/logos/C.png"
 import git from "../../../resources/logos/git.png"
 import html from "../../../resources/logos/html.png"
@@ -26,75 +25,95 @@ export default function TechnicalSkills() {
     return(
         <div className="relative overflow-hidden">
             <OpenBookBackground className="absolute"/>
-            <div className="absolute inset-0 top-[-275px] left-[-200px]">
-                <h1 className="font-custom2 text-black object-contain relative 
-                    sm:text-[22px] sm:left-[350px] sm:top-[330px]
-                    lg:text-[37px] lg:left-[450px] lg:top-[360px]
-                    xl:text-[50px] xl:left-[550px] xl:top-[400px]
-                    md:left-[380px] md:text-[27px] md:top-[340px]"> 
-                    Technical Skills 
-                </h1>
-                <img src={line}
-                    alt="line"
-                    className="object-contain relative
-                        sm:bottom-[-100px] sm:left-[20px]
-                        md:left-[10px] md:bottom-[-75px]
-                        lg:left-[-20px] lg:bottom-[-25px]
-                        xl:left-[-60px] xl:bottom-[50px]"/>
-            </div>
+            <h1 className="font-custom2 text-black object-contain absolute underline
+                text-[3.3vw] left-[25vw] top-[17vh]
+                2xl:text-[3vw] 
+                xl:text-[3.3vw] xl:left-[24vw] xl:top-[14%] 
+                lg:text-[3.3vw] lg:left-[24vw] lg:top-[15vh] 
+                md:text-[2.7vw] md:left-[29vw] md:top-[18vh] 
+                sm:text-[3.3vw] sm:left-[25vw] sm:top-[15vh]"> 
+                Technical Skills 
+            </h1>
 
 
-            <div className="absolute flex flex-col
-                xl:left-[350px] xl:top-[225px]
-                lg:left-[240px] lg:top-[150px]
-                md:left-[190px] md:top-[120px]
-                sm:left-[150px] sm:top-[100px]">
-                <h1 className="font-custom2 text-black text-[40px] mb-6
-                    xl:text-[40px] xl:mb-6
-                    lg:text-[27px]
-                    sm:text-[20px]">
+            <div className="absolute flex flex-col 
+                left-[25%] top-[28%]
+                2xl:left-[25%] 2xl:top-[25%] 
+                xl:left-[25.5%] xl:top-[25%] 
+                lg:left-[25%] lg:top-[25%] 
+                md:left-[29%] md:top-[28%] 
+                sm:left-[25%] sm:top-[25%] ">
+                <h1 className="font-custom2 text-black
+                    text-[2.7vw]
+                    2xl:text-[3vw] 
+                    lg:text-[2.5vw]
+                    md:text-[2vw]
+                    sm:text-[2.7vw]">
                     Frontend
                 </h1>
-                <LogoRow logoOne={react} logoTwo={html} logoThree={tailwindCSS}/>              
+                <LogoRow logoOne={react} logoTwo={html} logoThree={tailwindCSS}
+                        className="top-[-340%] right-[40%] space-x-4
+                                2xl:right-[55%] 2xl:top-[-250%] 2xl:space-x-10
+                                xl:top-[-350%] xl:right-[40%] 
+                                lg:top-[-400%] lg:right-[40%] 
+                                sm:top-[-340%] sm:right-[40%] sm:space-x-4"/>              
             </div>
-            <div className="absolute flex flex-col 
-                xl:left-[350px] xl:top-[450px]
-                lg:left-[240px] lg:top-[300px]
-                md:left-[190px] md:top-[240px]
-                sm:left-[150px] sm:top-[190px]">
-                <h1 className="font-custom2 text-black text-[40px] mb-6
-                    xl:text-[40px]
-                    lg:text-[27px]
-                    sm:text-[20px]">
+            <div className="absolute flex flex-col
+                left-[25%] top-[52%]
+                2xl:left-[24%] 2xl:top-[52%]
+                xl:left-[25%] xl:top-[50%] 
+                lg:left-[24%] lg:top-[50%] 
+                md:left-[29%] md:top-[50%] 
+                sm:left-[25%] sm:top-[50%]">
+                <h1 className="font-custom2 text-black 
+                    text-[2.7vw]
+                    2xl:text-[3vw] 
+                    lg:text-[2.5vw]
+                    md:text-[2vw]
+                    sm:text-[2.7vw]">
                     Backend
                 </h1>
-                <LogoRow logoOne={nodeJS} logoTwo={postgreSQL} logoThree={monogoDB}/>              
+                <LogoRow logoOne={nodeJS} logoTwo={postgreSQL} logoThree={monogoDB}
+                        className="top-[-300%] right-[40%] space-x-[40%]
+                            2xl:right-[45%] 2xl:top-[-220%] 2xl:space-x-8
+                            xl:top-[-330%] xl:right-[40%] xl:space-x-6
+                            lg:top-[-330%] lg:right-[20%] lg:space-x-[-10%]
+                            sm:top-[-300%] sm:right-[40%] sm:space-x-[40%]"/>              
+                            
             </div>
             <div className="absolute flex flex-col 
-                xl:right-[-370px] xl:top-[140px]
-                md:top-[70px] md:right-[-170px]
-                lg:top-[85px] lg:right-[-220px]
-                sm:right-[40px] sm:top-[70px]">
-                <h1 className="font-custom2 text-black text-[40px] mb-6
-                    xl:text-[40px]
-                    lg:text-[27px]
-                    sm:text-[20px]">
+                left-[53%] top-[20%]
+                2xl:left-[54%] 2xl:top-[17%]
+                xl:left-[53%] xl:top-[17%]
+                lg:left-[53%] lg:top-[17%]
+                md:left-[53%] md:top-[20%]
+                sm:left-[53%] sm:top-[20%]">
+                <h1 className="font-custom2 text-black
+                    text-[2.7vw]
+                    2xl:text-[3vw] 
+                    lg:text-[2.5vw]
+                    md:text-[2vw]
+                    sm:text-[2.7vw]">
                     Others
                 </h1>
                 <LogoRow logoOne={cLanguage} logoTwo={python} logoThree={java}
-                    className="xl:bottom-[375px] xl:right-[350px] xl:space-x-[-670px]
-                        md:space-x-[-330px] md:right-[175px] md:bottom-[190px]
-                        lg:space-x-[-400px] lg:right-[220px] lg:bottom-[240px]
-                        sm:space-x-[-320px] sm:bottom-[150px] sm:right-[-10px]"/>              
+                        className="top-[-340%] right-[20%] space-x-4
+                            2xl:right-[45%] 2xl:top-[-250%] 2xl:space-x-[70%]
+                            xl:top-[-350%] xl:right-[20%] 
+                            lg:top-[-400%] lg:right-[90%] 
+                            md:top-[-320%] md:right-[30%] 
+                            sm:top-[-340%] sm:right-[20%] sm:space-x-5"/>
             </div>
 
             <img src={git}
                 alt="git logo"
                 className="absolute inset-0 object-cover
-                    xl:w-[800px] xl:h-[800px] xl:left-[400px]
-                    md:left-[225px] md:top-[10px] md:w-[400px] md:h-[400px]
-                    lg:h-[500px] lg:w-[500px] lg:left-[320px]
-                    sm:w-[300px] sm:h-[300px] sm:left-[215px] sm:top-[40px] "
+                    w-[80%] h-[80%] left-[16%] top-[12%]
+                    2xl:w-[70%] 2xl:h-[70%] 2xl:left-[21.5%] 2xl:top-[10%]
+                    xl:w-[66%] xl:h-[70%] xl:left-[23%] xl:top-[6%]
+                    lg:w-[66%] lg:h-[70%] lg:left-[23%] lg:top-[10%]
+                    md:w-[60%] md:h-[70%] md:left-[25%] md:top-[12%]
+                    sm:w-[80%] sm:h-[80%] sm:left-[16%] sm:top-[12%]"
             />    
 
 

@@ -14,17 +14,19 @@ export default function OutsideBookStore2() {
     const handleClick = () => {
         return navigate("/contact");
     }
-
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768); 
-    const [isMediumScren, setIsMediumScreen] = useState(window.innerWidth >= 768 && window.innerWidth < 1024); 
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024 && window.innerWidth < 1280); 
+    const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768 && window.innerWidth < 1024); 
+    const [isExtraLargeScreen, setIsExtraLargeScreen] = useState(window.innerWidth >= 2560); 
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1280 && window.innerWidth < 1536); 
+
 
 
     useEffect(() => {
         const updateOrientation = () => {
             setIsSmallScreen(window.innerWidth < 768); 
-            setIsMediumScreen(window.innerWidth > 640 && window.innerWidth < 1024);
-            setIsLargeScreen(window.innerWidth > 1024 && window.innerWidth < 1280)
+            setIsMediumScreen(window.innerWidth >= 768 && window.innerWidth < 1024);
+            setIsExtraLargeScreen(window.innerWidth >= 2560);
+            setIsLargeScreen(window.innerWidth >= 1280 && window.innerWidth < 1536)
         };
 
         updateOrientation();
@@ -34,33 +36,45 @@ export default function OutsideBookStore2() {
     }, []);
 
     const initialPosition = isSmallScreen
-        ? { x: -100 , y: 0 } 
-        : isMediumScren
-        ? { x: -140 , y: 0 }
+        ? { x: -110, y: 0 } 
+        : isMediumScreen
+        ? {x: -150, y: -40}
+        : isExtraLargeScreen
+        ? {x: -450, y: 0}
         : isLargeScreen
-        ? { x: -200 , y: 0 }
-        : { x:-270, y:0 };
+        ? {x: -280, y: 0}
+        : {x: -300, y: 0}
+
+    return (
+        <div className="relative overflow-hidden w-screen h-screen">
+            <OutsideBookStore className="absolute" />
+            <Character
+                initialPosition={initialPosition}
+                className="h-screen w-screen right-[-50%] top-[25%] object-cover"
+            />
 
 
-    return(
-        <div className="relative h-screen overflow-hidden">
-            <OutsideBookStore className="absolute inset-0"/>
-            <Character initialPosition={initialPosition} className="absolute h-screen w-screen top-[23%]"/>
             <SpeechBubble text={[
                 "Whew that was a",
-                "whirlwind! Let's",
-                "keep in touch.",
-                "Here's my contact",
-                "Hope to hear from",
+                "whirlwind! Let's keep",
+                "in touch. Here's",
+                "my contact. Hope",
+                "to hear from",
                 "you :)"]}
-                className="absolute bottom-[90%] right-[5%] w-screen h-screen"/>
+                className="absolute 
+                    top-[-60%] h-[1000px] w-[1000px] left-[20%]
+                    2xl:top-[-40%] 2xl:left-[40%]
+                    xl:w-[1000px] xl:h-[1000px] xl:top-[-52%] xl:left-[20%]
+                    lg:h-[1000px] lg:w-[1000px] lg:top-[-50%] lg:left-[20%]
+                    md:h-[1000px] md:w-[1000px] md:top-[-50%] md:left-[25%]
+                    sm:h-[1000px] sm:w-[1000px] sm:top-[-50%] sm:left-[17%]"/>
                 
             <img src={treasure}
                 alt="treasure chest"
-                className="absolute inset-0 w-[100vw] h-[100vh] left-[-22%]
-                    sm:top-[35%]
+                className="absolute inset-0 w-[100vw] h-[100vh] left-[-22%] object-cover
+                    top-[30%]
                     xl:top-[32%]
-                    object-cover"
+                    sm:top-[35%]"
             />
 
             <button onClick={handleClick}

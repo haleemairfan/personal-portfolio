@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Character from "../../components/Character";
@@ -13,6 +14,24 @@ export default function LandingPage() {
     const handleClick = () => {
         navigate("/introduction");
     };
+    
+    const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768 && window.innerWidth < 1024); 
+
+
+    useEffect(() => {
+        const updateOrientation = () => {
+            setIsMediumScreen(window.innerWidth > 768 && window.innerWidth < 1024); 
+        };
+
+        updateOrientation();
+        window.addEventListener("resize", updateOrientation);
+
+        return () => window.removeEventListener("resize", updateOrientation);
+    }, []);
+
+    const initialPosition = isMediumScreen
+        ? { x: 50, y: -60 } 
+        : {x:50, y:0}
 
 
     return (
@@ -24,9 +43,8 @@ export default function LandingPage() {
                 className="absolute bottom-[-28%] right-[-30%] w-[100vw] h-[100vh] object-cover"
             />
             <Character
-                initialPosition={{x: 50, y: 0}}
-                className="h-screen w-screen right-[-50%] top-[20%] object-cover
-                sm:landscape:top-[25%]"
+                initialPosition={initialPosition}
+                className="h-screen w-screen top-[25%] object-cover"
             />
             <img
                 src={prompt}

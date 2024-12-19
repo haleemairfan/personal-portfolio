@@ -14,7 +14,13 @@ export default function BookStore() {
 
             <img src={smallBookshelf}
                 alt="small bookshelf"
-                className="absolute bottom-[15%] left-[5.5%] h-[100vh] w-[100vw] object-cover"
+                className="absolute h-[100vh] w-[100vw] object-cover
+                    bottom-[13%] left-[7%]
+                    2xl:bottom-[15%] 2xl:left-[5.5%]
+                    xl:bottom-[15%] xl:left-[10%]
+                    lg:bottom-[13%] lg:left-[15%]
+                    md:bottom-[13%] md:left-[7%]
+                    sm:bottom-[13%] sm:left-[7%]"
             />       
             <img src={haleema}
                 alt="haleema"
@@ -26,8 +32,12 @@ export default function BookStore() {
             /> 
             <img src={user}
                 alt="user"
-                className="absolute top-[2%] left-[5%] w-[80vw] h-[80vw] object-cover
-                    sm:landscape:top-[20px]"
+                className="absolute object-cover
+                    right-0 top-[20%] h-[120vh] w-[100vw]
+                    2xl:left-[-7%] 2xl:top-[20%] 
+                    xl:left-0 xl:top-[19%] xl:h-[120vh] xl:w-[100vw]
+                    lg:right-0 lg:top-[20%] lg:h-[120vh] lg:w-[100vw]
+                    sm:right-0 sm:top-[20%] sm:h-[120vh] sm:w-[100vw]"
             />            
             
         </div>

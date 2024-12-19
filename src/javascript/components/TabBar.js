@@ -11,9 +11,10 @@ export default function TabBar({ color = "black" }) {
 
     return (
         <div
-            className="flex flex-row justify-end items-center space-x-4 absolute right-4 top-2 
+            className="flex flex-row justify-end items-center absolute right-4 top-2
+                text-[8px] space-x-4
                 sm:space-x-6 sm:text-[10px] 
-                md:space-x-8 md:text-[15px] 
+                md:space-x-8 md:text-[13px] 
                 lg:space-x-15 lg:text-[20px]
                 xl:space-x-20 xl:text-[20px]
                 2xl:space-x-22 2xl:text-[30px]"

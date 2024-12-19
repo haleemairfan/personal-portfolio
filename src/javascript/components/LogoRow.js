@@ -1,41 +1,32 @@
-
-
 export default function({logoOne, logoTwo, logoThree, className}) {
     return (
-        <div className={`flex flex-row relative 
-            xl:bottom-[375px] xl:right-[350px] xl:space-x-[-670px]
-            md:space-x-[-330px] md:right-[175px] md:bottom-[190px]
-            lg:space-x-[-400px] lg:right-[220px] lg:bottom-[240px]
-            sm:space-x-[-320px] sm:bottom-[150px] sm:right-[-10px]
+        <div className={`flex flex-row absolute
             ${className}`}>
         <img
             src={logoOne}
             alt=""
-            className="h-[800px] w-[800px] object-cover
-                xl:h-[800px] xl:w-[800px]
-                lg:h-[500px] lg:w-[500px]
-                md:h-[400px] md:w-[400px]
-                sm:h-[300px] sm:w-[300px]"
-        />
+            className="object-cover
+                h-[80vh] w-[80vw]
+                md:h-[70vh] md:w-[100vw]
+                sm:h-[80vh] sm:w-[80vw]"/>
         <img
             src={logoTwo}
             alt=""
-            className="h-[800px] w-[800px] object-cover
-                xl:h-[800px] xl:w-[800px]
-                lg:h-[500px] lg:w-[500px]
-                md:h-[400px] md:w-[400px]
-                sm:h-[300px] sm:w-[300px]"
-        />
+            className="object-cover
+                h-[80vh] w-[80vw]
+                2xl::h-[100vh] 2xl::w-[100vw]
+                md:h-[70vh] md:w-[100vw]
+                sm:h-[80vh] sm:w-[80vw]"/>
+
+
         <img
             src={logoThree}
             alt=""
-            className="h-[800px] w-[800px] object-cover
-                xl:h-[800px] xl:w-[800px]
-                lg:h-[500px] lg:w-[500px]
-                md:h-[400px] md:w-[400px]
-                sm:h-[300px] sm:w-[300px]"
-        />
+            className="object-cover
+                h-[80vh] w-[80vw]
+                2xl::h-[100vh] 2xl::w-[100vw]
+                md:h-[70vh] md:w-[100vw]
+                sm:h-[80vh] sm:w-[80vw]"/>
     </div>
-
-    );  
+     );  
 }
