@@ -46,7 +46,11 @@ export default function Contact() {
                 </a> <br/>
                 <a href="https://www.linkedin.com/in/haleema-irfan-5b7054268">
                     Reach out to me on Linkedin!
+                </a> <br/>
+                <a href="https://github.com/haleemairfan">
+                    Explore my github
                 </a>
+
             </p>
 
 

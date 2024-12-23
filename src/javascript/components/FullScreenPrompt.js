@@ -13,7 +13,6 @@ export default function FullScreenPrompt({ onClose }) {
         } else if (element.msRequestFullscreen) {
             element.msRequestFullscreen();
         } else if (window.screen.orientation && window.screen.orientation.lock) {
-            // Handle mobile-specific full-screen behavior
             window.screen.orientation.lock("landscape").catch((err) => {
                 console.error("Error locking screen orientation:", err);
             });
