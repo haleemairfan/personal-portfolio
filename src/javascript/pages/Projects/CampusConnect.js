@@ -91,7 +91,7 @@ export default function CampusConnect() {
                 </span>
             </p>
             <p className="font-custom2 text-customFontColor underline relative 
-                left-[31%] text-[1.1vw] top-[2%]
+                left-[31%] text-[1.1vw] top-[2%] z-10
                 2xl:text-[1vw] 2xl:left-[42%] 2xl:top-[4%]
                 xl:left-[42%] xl:text-[1vw] xl:top-[3%]
                 lg:left-[37%] lg:text-[1.4vw] lg:top-[2%]

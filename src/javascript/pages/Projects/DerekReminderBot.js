@@ -157,7 +157,7 @@ export default function DerekReminderBot() {
 
 
             <p className="font-custom2 text-customFontColor underline absolute inset-0
-                    text-[1.1vw] left-[59%] top-[75%]
+                    text-[1.1vw] left-[59%] top-[75%] z-10
                     2xl:text-[1vw] 2xl:top-[72vh] 2xl:left-[60vw]
                     xl:left-[60%] xl:text-[1vw] xl:top-[71vh]
                     lg:left-[61vw] lg:text-[1.4vw] lg:top-[75vh]
