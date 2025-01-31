@@ -1,9 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import user from "../../resources/characters/user.png";
 
 const Character = ({ initialPosition, className }) => {
-  const charRef = useRef(null);
   const [position, setPosition] = useState(initialPosition);
   const velocity = useRef({ x: 0, y: 0 });
 
@@ -27,17 +26,17 @@ const Character = ({ initialPosition, className }) => {
     };
 
     const handleKeyUp = () => {
-      velocity.current.x = 0; 
+      velocity.current.x = 0;
     };
 
     const animate = () => {
       setPosition((prev) => {
-        const upperBoundX = initialPosition.x + 100; 
-        const lowerBoundX = initialPosition.x - 100; 
+        const upperBoundX = initialPosition.x + 100;
+        const lowerBoundX = initialPosition.x - 100;
         const screenX = window.innerWidth - 50;
         const maxX = Math.min(upperBoundX, screenX);
         const newX = Math.max(lowerBoundX, Math.min(prev.x + velocity.current.x, maxX));
-        return { x: newX, y: initialPosition.y }; 
+        return { x: newX, y: initialPosition.y };
       });
 
       requestAnimationFrame(animate);
@@ -52,27 +51,18 @@ const Character = ({ initialPosition, className }) => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
     };
-  }, []);
-
-  useEffect(() => {
-    gsap.to(charRef.current, {
-      x: position.x,
-      y: position.y,
-      duration: 0.05,
-      ease: "none",
-    });
-  }, [position]);
+  }, [initialPosition]);
 
   return (
-    <div
-      ref={charRef}
+    <motion.div
       className={`absolute ${className} bg-cover`}
       style={{
         backgroundImage: `url(${user})`,
-        bottom: `${position.y}px`,
-        left: `${position.x}px`,
+        bottom: 0, // Keep the character at the bottom
       }}
-    ></div>
+      animate={{ x: position.x, y: position.y }}
+      transition={{ type: "tween", duration: 0.05, ease: "linear" }}
+    />
   );
 };
 

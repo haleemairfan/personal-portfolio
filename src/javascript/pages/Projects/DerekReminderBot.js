@@ -121,28 +121,35 @@ export default function DerekReminderBot() {
                     lg:text-[1.4vw] lg:leading-[190%] lg:w-auto
                     md:text-[0.9vw] md:leading-[190%] md:w-auto md:top-[40vh] md:left-[25vw]
                     sm:text-[1.1vw] sm:leading-[190%] sm:w-auto sm:top-[42vh] sm:left-[31vw]">
-                A Telegram bot designed to help users keep track <br/>
-                of reminders throughout the week
-                <span className="font-sans">
-                    .
-                </span> Built entirely in <br/>
-                Python 
-                <span className="font-sans">
-                    ,
-                </span> I handled both the backend and user <br/>
-                interactions
-                <span className="font-sans">
-                    ,
-                </span> integrating a MongoDB database to <br/>
-                manage and store reminders effectively
-                <span className="font-sans">
-                    .
-                </span> I deployed <br/>
-                the bot on Render
-                <span className="font-sans">
-                    ,
-                </span> ensuring smooth operation and <br/>
-                accessibility for users
+                    A Telegram bot designed to help users keep track <br/>
+                    of reminders throughout the week
+                    <span className="font-sans">
+                        .
+                    </span> Built entirely in <br/>
+                    Python 
+                    <span className="font-sans">
+                        ,
+                    </span> I handled both the backend and user <br/>
+                    interactions
+                    <span className="font-sans">
+                        ,
+                    </span> integrating a MongoDB database to <br/>
+                    manage and store reminders effectively <br/>
+                    <span className="font-sans">
+                        .
+                    </span> The bot is built as a Flask application 
+                    <span className="font-sans">
+                        ,
+                    </span> which I deployed <br/>
+                    on Render
+                    <span className="font-sans">
+                        ,
+                    </span> ensuring smooth operation and <br/>
+                    accessibility for users
+                    <span className="font-sans">
+                        .
+                    </span>
+
             </p>
 
             <p className="font-custom2 font-black absolute inset-0 justify-center text-center
@@ -164,7 +171,7 @@ export default function DerekReminderBot() {
                     md:left-[58%] md:text-[1vw] md:top-[75%]
                     sm:text-[1.1vw] sm:left-[59%] sm:top-[75%]">
                 <a href="https://t.me/remindersUsingABot">
-                    Links to Telegram Bot
+                    Link to Telegram Bot
                 </a> <br/>
                 <a href="https://github.com/haleemairfan/ReminderBot">
                     Github repo
