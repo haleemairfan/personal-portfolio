@@ -1,54 +1,78 @@
-# Haleema's Personal Website
+# Project Documentation
 
-Hi there! 👋 I'm **Haleema**, a Year 2 Computer Science student at the **National University of Singapore (NUS)**. This website serves as a portfolio to showcase my journey, projects, and skills in software development. I’m actively seeking opportunities to explore and grow in the field of **software engineering**, with a strong interest in both **frontend** and **backend** development.
+## 1. Software Used
 
----
+- **React**: Frontend library for building user interfaces.
+- **Docker**: Used for containerization and testing to ensure consistency across environments.
+- **Render**: Cloud platform for deployment, ensuring smooth operation and accessibility.
 
-## About Me
+### 1.a Libraries Used
 
-I am passionate about creating impactful solutions through technology and have hands-on experience building projects in both frontend and backend development. While I haven’t had professional experience yet, I’m eager to collaborate in professional environments to deepen my understanding of software development and contribute meaningfully to projects.
-
----
-
-## Skills
-
-### Languages:
-- **HTML, CSS, JavaScript, TypeScript**
-- **Python, Java, C**
-  
-### Frameworks and Libraries:
-- **React, Tailwind CSS**
-
-### Backend & Databases:
-- **Node.js**
-- **PostgreSQL, MySQL, MongoDB**
-
-### Tools and Platforms:
-- **Docker, Git**
+- **react-router-dom**: For managing navigation and routing within the application.
+- **Tailwind CSS**: For creating a responsive design and styling components efficiently.
+- **Framer Motion**: For animating interactive character movements, enhancing user engagement.
 
 ---
 
-## Projects
+## 2. Principles Followed
 
-### **Personal Portfolio**
-- This website! A showcase of my skills, journey, and projects.
-- **Technologies used**: React, Tailwind CSS, Node.js.
+- **DRY (Don't Repeat Yourself) Principle**:
+  - Reused components and layouts wherever possible to avoid duplication.
+  - Example: `PageLayout` component was abstracted out and shared between `Introduction` and `LandingPage` pages.
 
-> More projects to come as I continue exploring and learning.
-
----
-
-## What’s Next?
-
-I look forward to:
-- Gaining hands-on experience in professional software development environments.
-- Collaborating with teams to build scalable, impactful applications.
-- Enhancing my knowledge of emerging technologies.
+- **Component Abstraction**:
+  - Created reusable components for consistent functionality.
+  - Example: `BookStoreLayout` and `OutsideBookStoreLayout` encapsulate shared layout logic for their respective pages.
 
 ---
 
-## Contact Me
+## 3. Structure
 
-Feel free to reach out to discuss opportunities or collaborations:
-- **Email**: [haleemairfan04@gmail.com]
-- **LinkedIn**: [www.linkedin.com/in/haleemairfan]
+The project is structured as follows:
+
+### **Main Components and Pages**
+- **`index.js`**: The entry point that renders the `App` component.
+- **`App.js`**: Contains the `Routes` component from `react-router-dom` to manage page navigation.
+
+#### Pages
+1. **LandingPage**: Shares `PageLayout` with `Introduction` and conditionally renders `FullScreenPrompt`.
+2. **Introduction**: Uses `PageLayout` and includes a `SpeechBubble` component.
+3. **Goals**: Uses `OutsideBookStoreLayout` for its layout.
+4. **BookStorePage**: Uses `BookStoreLayout` to display the bookstore content.
+5. **TechnicalSkills**: Renders `OpenBookBackground` and `LogoRows` for its unique design.
+6. **BookStorePage2**: Uses the same `BookStoreLayout` as `BookStorePage`.
+7. **CampusConnect**: Renders `OpenBookBackground`.
+8. **DerekReminderBot**: Renders `OpenBookBackground`.
+9. **OutsideBookStore2**: Uses `OutsideBookStoreLayout`.
+10. **Contact**: Shares `OutsideBookStoreLayout`.
+
+---
+
+### **Overall Structure**
+#### Pages
+- Pages are defined as React components under `src/pages/`.
+- Each page is routed via `react-router-dom` in `App.js`.
+
+#### Reusable Components
+- **Layouts**:
+  - `PageLayout`: Shared between `LandingPage` and `Introduction`.
+  - `BookStoreLayout`: Shared between `BookStorePage` and `BookStorePage2`.
+  - `OutsideBookStoreLayout`: Shared between `Goals`, `OutsideBookStore2`, and `Contact`.
+- **UI Components**:
+  - `SpeechBubble`: Displays dialogues on various pages.
+  - `Character`: Animated with `Framer Motion` for interactivity.
+  - `TabBar`: Persistent navigation bar across pages.
+
+#### Styling
+- Tailwind CSS is used to ensure responsive and consistent styling across components.
+
+---
+
+## 4. Highlights
+- **Reusable Layouts**: Abstraction of layouts (`PageLayout`, `BookStoreLayout`, etc.) reduces redundancy and enforces consistency.
+- **Dynamic Animations**: Framer Motion enhances the user experience with smooth character movements.
+- **Responsive Design**: Tailwind CSS ensures the application is mobile-friendly and visually appealing on all devices.
+
+---
+
+
